@@ -1,7 +1,7 @@
 {
   "name": "site-buffet-casa-do-chef",
   "private": true,
-  "homepage": "https://elielassis7.github.io/buffet-casa-do-chef/",
+  "homepage": "https://elielassis7.github.io/buffet-casa-do-chef",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
