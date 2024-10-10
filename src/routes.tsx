@@ -14,30 +14,30 @@ import React from 'react'
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/buffet-casa-do-chef',
     element: <AppLayout />,
     errorElement: <Error />,
     children: [
-      { path: '/', element: <Home /> },
-      { path: '/service', element: <Service /> },
-      { path: '/contact', element: <Contact /> }
+      { path: '/buffet-casa-do-chef', element: <Home /> },
+      { path: '/buffet-casa-do-chef/service', element: <Service /> },
+      { path: '/buffet-casa-do-chef/contact', element: <Contact /> }
     ],
   },
   {
-    path: '/auth',
+    path: '/buffet-casa-do-chef/auth',
     element: <AuthLayout />,
     children: [
-      { path: '/auth', element: <Navigate to="/auth/sign-in" /> },
-      { path: '/auth/sign-in', element: <SignIn /> },
-      { path: '/auth/sign-up', element: <SignUp /> },
+      { path: '/buffet-casa-do-chef/auth', element: <Navigate to="/buffet-casa-do-chef/auth/sign-in" /> },
+      { path: '/buffet-casa-do-chef/auth/sign-in', element: <SignIn /> },
+      { path: '/buffet-casa-do-chef/auth/sign-up', element: <SignUp /> },
     ],
   },
   {
-    path: '/admin',
+    path: '/buffet-casa-do-chef/admin',
     element: <AdminLayout />,
     children: [
-      { path: '/admin', element: <Navigate to="/admin/control-panel" /> },
-      { path: '/admin/control-panel', element: <ControlPanel /> },
+      { path: '/buffet-casa-do-chef/admin', element: <Navigate to="/buffet-casa-do-chef/admin/control-panel" /> },
+      { path: '/buffet-casa-do-chef/admin/control-panel', element: <ControlPanel /> },
 
     ],
   },
