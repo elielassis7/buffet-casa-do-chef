@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Home, ChefHat, HandPlatter, MessageCircleMore } from 'lucide-react'
 import { Separator } from '@radix-ui/react-separator'
+import React from "react";
 
 
 export function Header() {

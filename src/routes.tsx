@@ -10,6 +10,7 @@ import { SignIn } from './pages/auth/sign-in'
 import { SignUp } from './pages/auth/sign-up'
 import { AdminLayout } from './pages/_layout/admin'
 import { ControlPanel } from './pages/admin/controlPanel'
+import React from 'react'
 
 export const router = createBrowserRouter([
   {

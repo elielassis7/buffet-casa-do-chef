@@ -5,6 +5,7 @@ import ImageHomeFormatura from '../../../assets/image-formatura-home.jpg'
 import ImageHome15Th from '../../../assets/image-15-anos-home.jpg'
 import ImageHomeCorporative from '../../../assets/image-corporative-home.jpg'
 import { useNavigate } from 'react-router-dom'
+import React from 'react'
 export function Home() {
 
   const navigate = useNavigate()

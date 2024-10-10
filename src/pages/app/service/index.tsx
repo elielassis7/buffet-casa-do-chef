@@ -1,4 +1,5 @@
 
+import React from 'react'
 import { ServiceContainer } from './components/ServiceContainer'
 export function Service() {
   return (

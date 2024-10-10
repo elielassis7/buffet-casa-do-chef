@@ -1,3 +1,5 @@
+import React from "react"
+
 interface serviceContainerProps {
   title: string
   content: string
