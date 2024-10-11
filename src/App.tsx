@@ -8,7 +8,7 @@ export function App() {
 
 
   return (
-    <div className="bg-bordo min-h-screen sm:max-sm:w-screen antialiased">
+    <div className="bg-bordo min-h-screen antialiased">
       <a
         type="button"
         href="https://wa.me/5544998882471"

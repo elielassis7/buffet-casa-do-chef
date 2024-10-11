@@ -6,15 +6,16 @@ import ImageHome15Th from '../../../assets/image-15-anos-home.jpg'
 import ImageHomeCorporative from '../../../assets/image-corporative-home.jpg'
 import { useNavigate } from 'react-router-dom'
 import React from 'react'
+import { AdvantageCircle } from './components/AdvantageCircle'
 export function Home() {
 
   const navigate = useNavigate()
 
   return (
-    <div className="flex flex-1 flex-col items-center justify-center min-h-screen">
-      <div className="flex flex-row justify-center relative border-t-[1px] border-b-[1px] h-[500px] border-sky-400">
+    <div className="flex flex-1 flex-col items-center justify-center min-h-screen ">
+      <div className="flex flex-row justify-center relative border-t-[1px] border-b-[1px] h-[300px] md:h-[500px] border-sky-400">
         <img src={imageHomeBuffet} alt="" className='relative w-full object-cover blur-[2px]' />
-        <h1 className='font-dancing font-bold text-bordo bg-red-400/50 w-full text-center text-8xl pl-4 absolute z-10 top-32'>Buffet Casa do Chef</h1>
+        <h1 className='font-dancing font-bold text-bordo bg-red-400/50 w-full text-center text-5xl md:text-8xl pl-4 absolute z-10 top-32'>Buffet Casa do Chef</h1>
         {/* <div className="flex flex-1 flex-row justify-between">
           <div className='h-full flex flex-col justify-center items-center w-[80%]'>
             <h1 className='font-dancing font-bold text-gray-800 text-6xl pl-4'>Buffet Casa do Chef</h1>
@@ -41,32 +42,33 @@ export function Home() {
 
       </div>
 
-      <h2 className='font-Josefin text-6xl font-semibold text-red-400 my-7'>Aqui sua festa <span className='font-dancing text-6xl font-bold text-yellow-300 underline'>acontece!</span></h2>
+      <h2 className='font-Josefin text-3xl md:text-6xl font-semibold text-red-400 my-7'>Aqui sua festa <span className='font-dancing text-3xl md:text-6xl font-bold text-yellow-300 underline'>acontece!</span></h2>
 
-      <div className='w-full flex flex-row justify-around items-center my-10'>
+      <div className='w-full grid grid-cols-2 gap-3 md:gap-0 ml-16 md:ml-0 grid-rows-2 md:flex md:flex-row justify-around items-center my-10'>
 
-        <div className=' size-60 rounded-full bg-orange-700 flex flex-col items-center justify-center z-10 border-4 border-red-400'>
-          <h3 className='text-red-400 font-bold font-Josefin text-3xl'>Cozinha</h3>
-          <span className='text-yellow-300 font-normal font-Josefin text-3xl'>Propria</span>
-        </div>
-        <div className=' size-60 rounded-full bg-orange-700 flex flex-col items-center justify-center z-10 border-4 border-red-400'>
-          <h3 className='text-red-400 font-bold font-Josefin text-3xl'>Espaço para</h3>
-          <span className='text-yellow-300 font-normal font-Josefin text-3xl text-center'>30 a 2000 pessoas</span>
-        </div>
-        <div className=' size-60 rounded-full bg-orange-700 flex flex-col items-center justify-center z-10 border-4 border-red-400'>
-          <h3 className='text-red-400 font-bold font-Josefin text-3xl'>Melhor</h3>
-          <span className='text-yellow-300 font-normal font-Josefin text-3xl text-center'>Custo beneficio</span>
-        </div>
-        <div className=' size-60 rounded-full bg-orange-700 flex flex-col items-center justify-center z-10 border-4 border-red-400'>
-          <h3 className='text-red-400 font-bold font-Josefin text-3xl'>Otima</h3>
-          <span className='text-yellow-300 font-normal font-Josefin text-3xl'>Localização</span>
-        </div>
+        <AdvantageCircle
+          text1='Cozinha'
+          text2='Própria'
+        />
+        <AdvantageCircle
+          text1='30 a 2000'
+          text2='pessoas'
+        />
+        <AdvantageCircle
+          text1='Melhor'
+          text2='Custo beneficio'
+        />
+        <AdvantageCircle
+          text1='Ótima'
+          text2='Localização'
+        />
+
       </div>
 
-      <h2 className='font-Josefin text-6xl font-semibold text-red-400 mt-7'>Nossos Serviços</h2>
-      <h3 className='font-Josefin text-4xl font-medium text-yellow-300 mt-2'>Conheça algumas de nossas opções</h3>
+      <h2 className='font-Josefin text-4xl md:text-6xl font-semibold text-red-400 mt-4 md:mt-7 text-center'>Nossos Serviços</h2>
+      <h3 className='font-Josefin text-2xl md:text-4xl font-medium text-yellow-300 mt-2 text-center'>Conheça algumas de nossas opções</h3>
 
-      <div className='grid grid-cols-2 grid-rows-2 gap-3 p-6 w-full'>
+      <div className='grid grid-rows-4 md:grid-cols-2 md:grid-rows-2 gap-3 p-2 md:p-6 w-full'>
         <ServiceCard
           title="Casamento"
           description="Serviço de buffet completo para casamentos, com opções personalizadas."
