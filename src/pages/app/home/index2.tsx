@@ -91,7 +91,7 @@ export function Home() {
         />
 
       </div>
-      <div className='flex flex-row justify-around w-full'>
+      <div className='flex flex-col md:flex-row justify-around w-full'>
         <button onClick={() => navigate('/service')} className='font-Josefin text-3xl rounded-md py-1 px-4 mb-7 bg-red-500 hover:bg-red-400 active:scale-95 cursor-pointer text-yellow-100'>Saiba mais</button>
         <button onClick={() => navigate('/contact')} className='font-Josefin text-3xl rounded-md py-1 px-4 mb-7 bg-red-500 hover:bg-red-400 active:scale-95 cursor-pointer text-yellow-100'>Faça um orçamento</button>
       </div>
