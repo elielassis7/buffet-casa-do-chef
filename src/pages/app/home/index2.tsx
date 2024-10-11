@@ -44,7 +44,7 @@ export function Home() {
 
       <h2 className='font-Josefin text-3xl md:text-6xl font-semibold text-red-400 my-7'>Aqui sua festa <span className='font-dancing text-3xl md:text-6xl font-bold text-yellow-300 underline'>acontece!</span></h2>
 
-      <div className='w-full grid grid-cols-2 gap-3 md:gap-0 ml-16 md:ml-0 grid-rows-2 md:flex md:flex-row justify-around items-center my-10'>
+      <div className='w-full grid grid-cols-2 gap-3 md:gap-0 ml-12 md:ml-0 grid-rows-2 md:flex md:flex-row justify-around items-center my-10'>
 
         <AdvantageCircle
           text1='Cozinha'
@@ -92,8 +92,8 @@ export function Home() {
 
       </div>
       <div className='flex flex-col md:flex-row justify-around w-full'>
-        <button onClick={() => navigate('/service')} className='font-Josefin text-3xl rounded-md py-1 px-4 mb-7 bg-red-500 hover:bg-red-400 active:scale-95 cursor-pointer text-yellow-100'>Saiba mais</button>
-        <button onClick={() => navigate('/contact')} className='font-Josefin text-3xl rounded-md py-1 px-4 mb-7 bg-red-500 hover:bg-red-400 active:scale-95 cursor-pointer text-yellow-100'>Faça um orçamento</button>
+        <button onClick={() => navigate('/buffet-casa-do-chef/service')} className='font-Josefin text-3xl rounded-md py-1 px-4 mb-7 bg-red-500 hover:bg-red-400 active:scale-95 cursor-pointer text-yellow-100'>Saiba mais</button>
+        <button onClick={() => navigate('/buffet-casa-do-chef/contact')} className='font-Josefin text-3xl rounded-md py-1 px-4 mb-7 bg-red-500 hover:bg-red-400 active:scale-95 cursor-pointer text-yellow-100'>Faça um orçamento</button>
       </div>
 
     </div>

@@ -6,7 +6,7 @@ import React from "react";
 
 export function Header() {
   return (
-    <div className="border-b fixed top-0 z-20 w-full bg-bordo lg:relative">
+    <div className="border-b fixed top-0 z-20 w-screen bg-bordo lg:relative">
       <div className="flex h-8 md:h-16 items-center gap-2 md:gap-6 w-full px-2 md:px-6">
         <div className="flex flex-col items-center justify-center">
           <ChefHat className="size-6 md-size-7 lg:size-8 text-indigo-500 sm:text-emerald-500 md:text-rose-700" />
