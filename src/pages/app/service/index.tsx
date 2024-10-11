@@ -3,9 +3,9 @@ import React from 'react'
 import { ServiceContainer } from './components/ServiceContainer'
 export function Service() {
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div className="flex flex-col items-center justify-center w-full gap-3">
 
-      <h2 className='font-Josefin font-bold text-6xl text-yellow-300 my-5'>Nossos Serviços</h2>
+      <h2 className='font-Josefin font-bold text-3xl md:text-6xl text-yellow-300 mt-10 md:my-5'>Nossos Serviços</h2>
 
       <ServiceContainer
         title='Casamento '
