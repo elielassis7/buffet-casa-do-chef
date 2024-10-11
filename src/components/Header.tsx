@@ -7,9 +7,9 @@ import React from "react";
 export function Header() {
   return (
     <div className="border-b">
-      <div className="flex h-16 items-center gap-6 px-6 ">
+      <div className="flex h-16 items-center gap-6 sm:max-sm:w-screen px-6 md:max-w-screen-md sm:max-w-screen-sm">
         <div className="flex flex-col items-center justify-center">
-          <ChefHat className="size-8" />
+          <ChefHat className="size-8 sm:size-4" />
           Logo
         </div>
         <Separator orientation="vertical" className="h-6  " />
